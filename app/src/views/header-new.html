@@ -1,0 +1,10 @@
+<div class="header">
+    <div class="btn-left-container link">
+        <a ng-click="main.cancelAddProduct()" class="header-link">Cancel</a>
+    </div>
+    <div class="header-title new">Add new list item</div>
+    <div class="btn-right-container link">
+        <a ng-if="main.inputData.productTitle.length" ng-click="main.addProduct()" class="header-link">Done</a>
+        <a ng-if="!main.inputData.productTitle.length" class="header-link disabled">Done</a>
+    </div>
+</div>

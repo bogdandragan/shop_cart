@@ -1,0 +1,242 @@
+@font-face {
+    font-family: CustomFont;
+    src: url(/assets/fonts/din1451alt.ttf);
+}
+
+body {
+    background-color: #E6E7E8;
+    font-family: CustomFont, sans-serif;
+    margin: 0;
+}
+
+.header {
+    background-color: #f9f9f9;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+.header-title {
+    font-size: 1.3em;
+    line-height: 60px;
+    float: left;
+    width: calc(100% - 90px);
+    text-align: center;
+}
+
+.header-title.edit {
+    width: calc(100% - 115px);
+}
+
+.header-title.new {
+    width: calc(100% - 140px);
+}
+
+.header-link {
+    font-size: 1.3em;
+    line-height: 60px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.header-link.disabled {
+    color: #666;
+}
+
+.btn-left-container {
+    float: left;
+    padding: 18px 10px;
+}
+
+.btn-left-container img {
+    max-height: 25px;
+}
+
+.btn-right-container {
+    float: right;
+    padding: 18px 10px;
+}
+
+.btn-right-container img {
+    max-height: 25px;
+}
+
+.btn-left-container.link, .btn-right-container.link {
+    padding: 0px 10px;
+    width: 50px
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    min-height: 60px;
+    list-style-type: none;
+    padding: 0;
+    border-bottom: 1px solid #D0D0D1;
+}
+
+li img {
+    max-height: 25px;
+    /*margin: 10px;*/
+}
+
+.home-img {
+    float: right;
+    height: 60px;
+}
+
+.cart-img {
+    float: left;
+    height: 60px;
+}
+
+.cart-img:before, .home-img:before {
+    content: '';
+    display: block;
+    height: 50%;
+    margin-top: -.7em;
+}
+
+.home-img:before {
+    margin-top: -.8em;
+}
+
+.cart-img img {
+    max-width: 30px;
+    margin-left: 10px;
+}
+
+.home-img img {
+    margin-right: 10px;
+}
+
+div.item-home, div.item-cart {
+    width: calc(100% - 80px);
+    min-height: 60px;
+    padding-left: 25px;
+}
+
+div.item-home {
+    right: 55px;
+    left: 0px;
+    border-bottom: 1px solid #D0D0D1;
+    box-shadow: 3px 0px 2px 0px rgba(176, 177, 178, 0.75);
+}
+
+div.item-cart {
+    left: 55px;
+    right: 0px;
+    border-bottom: 1px solid #D0D0D1;
+    box-shadow: -3px 0px 2px 0px rgba(208, 208, 209, 0.75);
+}
+
+div.item-edit {
+    width: 100%;
+    border-bottom: 1px solid #D0D0D1;
+}
+
+.item-edit .deleteIcon {
+    cursor: pointer;
+    vertical-align: sub;
+    margin: 0 10px;
+}
+
+.product-title {
+    font-size: 1.5em;
+    line-height: 60px;
+}
+
+footer {
+    background-color: #f9f9f9;
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    border-top: 1px solid #AAAAAA;
+}
+
+.btn-list {
+    margin-left: 50px;
+}
+
+.btn-cart {
+    margin-right: 50px;
+}
+
+.btn-cart a {
+    background-image: url("/assets/cart_inactive.png");
+    display: block;
+    height: 35px;
+    width: 35px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.btn-list a {
+    background-image: url("/assets/list_inactive.png");
+    display: block;
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.list-active {
+    background-image: url("/assets/list_active.png") !important;
+}
+
+.cart-active {
+    background-image: url("/assets/cart_active.png") !important;
+}
+
+.btn-cart a:hover, .btn-cart a:focus {
+    background-image: url("/assets/cart_active.png");
+}
+
+.btn-list a:hover, .btn-list a:focus {
+    background-image: url("/assets/list_active.png");
+}
+
+.home-container {
+    margin-top: 58px;
+    margin-bottom: 60px;
+}
+
+.new-container {
+    margin-top: 60px;
+    background-color: #fff;
+    min-height: calc(100% - 60px);
+}
+
+.input-container {
+    text-align: center;
+    padding: 20px;
+}
+
+input[type="text"] {
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: 0;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+.characters {
+    margin-top: 5px;
+    text-align: right;
+}

@@ -1,0 +1,9 @@
+<div class="new-container">
+    <div class="input-container">
+        <h4>Add new list item</h4>
+        <input type="text" id="newProduct" name="newProduct" ng-model="main.inputData.productTitle"
+               ng-keypress="main.countInputLength($event, main.inputData.productTitle.length)">
+        <h4 class="characters">Characters left {{main.inputLength - main.inputData.productTitle.length}}</h4>
+    </div>
+</div>
+

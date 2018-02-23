@@ -1,0 +1,16 @@
+<html ng-app="app">
+<head>
+    <title data-ng-bind="$state.current.data.title + ' - Groceries'">Groceries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{$state.current.data.description}}">
+    <link rel="shortcut icon" type='image/x-icon' href="/assets/favicon.ico"/>
+    <link rel="shortcut icon" type="image/png" href="/assets/favicon.png"/>
+    <style></style>
+</head>
+<body ng-controller="mainCtrl as main">
+<div ui-view="header"></div>
+<div class="main-content" ui-view="main"></div>
+<div ui-view="footer"></div>
+<script src="bundle.min.js"></script>
+</body>
+</html>

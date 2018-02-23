@@ -1,0 +1,28 @@
+<div class="home-container">
+    <ul>
+        <li class="item" ng-repeat="product in main.products | filter : main.filterProducts">
+            <div ng-if="$state.current.data.isEditMode" class="item-edit"
+                 style="background-color: #fff; position: absolute;">
+                <img class="deleteIcon" src="/assets/delete.png" ng-click="main.deleteProduct(product.id)">
+                <span class="product-title">
+                    {{product.title}}
+                </span>
+            </div>
+            <div ng-if="!$state.current.data.isEditMode" ng-swipe-left="main.swipeLeft(product)"
+                 ng-swipe-right="main.swipeRight(product)"
+                 ng-class="{'item-home': !product.isCart, 'item-cart': product.isCart}"
+                 style="background-color: #fff; position: absolute;">
+                <span class="product-title">
+                    {{product.title}}
+                </span>
+            </div>
+            <div class="cart-img">
+                <img src="/assets/cart.png">
+            </div>
+            <div class="home-img">
+                <img src="/assets/home.png">
+            </div>
+        </li>
+    </ul>
+</div>
+
